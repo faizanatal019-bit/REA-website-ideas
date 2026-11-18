@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>About Us – Refugee Education Australia</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;family=Open+Sans:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+.p{background:#FBF3E2;color:#333;font-family:'Open Sans',system-ui,sans-serif;line-height:1.7;font-size:17px;overflow:hidden}
+.p h1,.p h2,.p h3,.p .l{font-family:Lato,sans-serif;margin:0}
+.p a:focus-visible,.p summary:focus-visible,.p input:focus-visible{outline:3px solid #017A8F;outline-offset:3px}
+.w{max-width:1200px;margin:0 auto;padding:0 32px;position:relative}
+.ann{background:#014F5C;color:#FBF3E2;font-size:14.5px}
+.ann .w{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.ann a{color:#FBC02D;font-weight:700;text-decoration:none}
+.ban{background:#014F5C;color:#FBF3E2;position:relative;border-radius:0 0 56px 56px;overflow:hidden;padding-bottom:84px}
+.bl{position:absolute;border-radius:50%;pointer-events:none}
+.b1{width:340px;height:340px;background:#F66E22;opacity:.9;right:-80px;top:-110px;animation:dr 12s ease-in-out infinite}
+.b2{width:170px;height:170px;background:#FBC02D;right:200px;bottom:-60px;animation:dr 9s ease-in-out infinite reverse}
+.b3{width:420px;height:420px;background:#017A8F;opacity:.5;left:-160px;bottom:-240px;animation:dr 14s ease-in-out infinite}
+@keyframes dr{50%{transform:translate(30px,-26px) scale(1.06)}}
+.util{display:flex;gap:22px;justify-content:flex-end;flex-wrap:wrap;padding-top:14px;font-size:14px;position:relative;z-index:2}
+.util a{color:#FBF3E2;opacity:.8;text-decoration:none}.util a:hover{opacity:1;text-decoration:underline}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:12px;padding:10px 12px 10px 22px;border-radius:999px;background:rgba(255,255,255,.95);box-shadow:0 10px 30px rgba(0,0,0,.15);position:relative;z-index:2}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:#014F5C;font:900 17px/1.1 Lato,sans-serif}
+.mk{width:42px;height:42px;border-radius:50%;background:#017A8F;color:#fff;display:grid;place-items:center;font:900 14px Lato,sans-serif}
+.nav{display:flex;gap:2px;flex-wrap:wrap;align-items:center}
+.nav a{font:700 15px Lato,sans-serif;color:#333;text-decoration:none;padding:10px 14px;border-radius:999px;transition:background .25s,color .25s,transform .25s}
+.nav a:hover{background:#017A8F;color:#fff;transform:translateY(-2px)}
+.nav a.on{background:#E1EFF1;color:#014F5C}
+.nav a.dn2{background:#B8420A;color:#fff;margin-left:6px;padding:11px 24px}.nav a.dn2:hover{background:#014F5C}
+.bt{position:relative;z-index:2;padding-top:72px;max-width:760px}
+.crumb{font:700 14px Lato,sans-serif;letter-spacing:.06em;color:#FBC02D;margin:0 0 14px}
+.crumb a{color:#FBC02D;text-decoration:none}.crumb a:hover{text-decoration:underline}
+.ban h1{font-size:clamp(3rem,7vw,5.6rem);line-height:1;font-weight:900;letter-spacing:-.035em;animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes up{from{opacity:0;transform:translateY(40px)}}
+.ban .s{font-size:20px;margin:20px 0 0;max-width:46ch;color:#E6DDC8;animation:up .9s .15s cubic-bezier(.2,.8,.2,1) both}
+.chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:-30px auto 0;position:sticky;top:12px;z-index:5;padding:10px 14px;border-radius:999px;background:#fff;box-shadow:0 12px 34px rgba(1,79,92,.16);width:max-content;max-width:calc(100% - 32px)}
+.chips a{font:700 15px Lato,sans-serif;color:#014F5C;text-decoration:none;padding:9px 18px;border-radius:999px;transition:background .25s,color .25s}
+.chips a:hover{background:#017A8F;color:#fff}
+.sec{padding:96px 0 0}
+.eb{font:900 13px Lato,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#B8420A;margin:0 0 10px;display:flex;gap:12px;align-items:center}
+.eb:before{content:"";width:34px;height:2px;background:#F66E22}
+.sec h2{font-size:clamp(2rem,3.8vw,3.2rem);line-height:1.06;font-weight:900;color:#014F5C;letter-spacing:-.02em}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;margin-top:36px}
+.vis{background:#017A8F;color:#fff;border-radius:32px;padding:44px 40px;position:relative;overflow:hidden}
+.vis:after{content:"";position:absolute;width:200px;height:200px;border-radius:50%;border:2px dashed rgba(255,255,255,.4);right:-60px;bottom:-60px;animation:sp 24s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.vis h3{font-size:26px;font-weight:900;margin-bottom:12px;color:#FBC02D}
+.vis p{font:700 clamp(1.4rem,2.4vw,2rem)/1.25 Lato,sans-serif;margin:0}
+.pur{background:#fff;border-radius:32px;padding:44px 40px}
+.pur h3{font-size:26px;font-weight:900;color:#014F5C;margin-bottom:12px}
+.pur p{margin:0 0 12px}
+.pur small{color:#555;font-size:15px}
+.ms{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:36px;counter-reset:m}
+.mc{counter-increment:m;background:#fff;border-radius:24px;padding:28px 26px;font-size:16px;position:relative;transition:transform .3s,box-shadow .3s}
+.mc:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(1,79,92,.14)}
+.mc:before{content:"0" counter(m);display:block;font:900 34px Lato,sans-serif;color:transparent;-webkit-text-stroke:1.6px #017A8F;margin-bottom:10px;transition:color .3s}
+.mc:hover:before{color:#017A8F}
+.pn{margin-top:36px;display:grid;gap:14px}
+.pi{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:center;background:#fff;border-left:8px solid var(--c);border-radius:20px;padding:22px 28px;font-size:18px;transition:transform .3s}
+.pi:hover{transform:translateX(10px)}
+.pi b{font:900 34px Lato,sans-serif;color:var(--c)}
+.grp{margin-top:40px}
+.grp h3{font:900 22px Lato,sans-serif;color:#014F5C;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.grp h3 span{font:700 14px 'Open Sans';color:#555}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;align-items:start}
+.pc{background:#fff;border-radius:24px;transition:transform .3s,box-shadow .3s}
+.pc:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(1,79,92,.14)}
+.pc summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:60px 1fr 28px;gap:14px;align-items:center;padding:18px 20px}
+.pc summary::-webkit-details-marker{display:none}
+.av{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font:900 19px Lato,sans-serif;background:var(--c);color:var(--k)}
+.pc b{display:block;font:900 17px/1.2 Lato,sans-serif;color:#014F5C}
+.pc em{display:block;font-style:normal;font-size:14px;color:#B8420A;font-weight:600;line-height:1.35;margin-top:3px}
+.pl{width:28px;height:28px;border-radius:50%;background:#E1EFF1;color:#014F5C;display:grid;place-items:center;font:900 18px Lato,sans-serif;transition:transform .3s,background .3s}
+.pc[open] .pl{transform:rotate(45deg);background:#FBC02D}
+.pc p{margin:0;padding:0 22px 22px;font-size:15px;color:#444;border-top:1px solid #efe6d0;padding-top:16px;margin:0 20px}
+.pc p{padding:16px 0 20px;margin:0 22px}
+.ft{background:#fff;padding:72px 0 36px;margin-top:110px;color:#333;border-radius:56px 56px 0 0}
+.ft a{color:#006B7C}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px}
+.ft h3{font-size:20px;color:#014F5C;margin-bottom:14px}
+.ft ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.ft li a{text-decoration:none;display:inline-block;transition:transform .25s,color .25s}.ft li a:hover{transform:translateX(8px);color:#B8420A}
+.ft form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ft label{display:grid;gap:4px;font-size:14px}.ft .f{grid-column:1/-1}
+.ft input{font:16px 'Open Sans',sans-serif;padding:13px 16px;border-radius:14px;border:1.5px solid #c9c0a8;background:#FBF3E2;width:100%}
+.ft input:focus{border-color:#017A8F;box-shadow:0 0 0 4px rgba(1,122,143,.18);outline:0}
+.ft button{justify-self:start;font:900 17px Lato,sans-serif;background:#B8420A;color:#fff;border:0;border-radius:999px;padding:14px 30px;cursor:pointer;transition:transform .25s,background .25s}
+.ft button:hover{background:#014F5C;transform:translateY(-3px)}
+.ack{margin-top:48px;padding-top:22px;border-top:1px solid #e4dcc6;font-size:14px;color:#555}
+.rv{opacity:1}
+@keyframes rv{from{opacity:0;transform:translateY(50px)}}
+@supports (animation-timeline:view()){.rv{animation:rv linear both;animation-timeline:view();animation-range:entry 0% entry 55%}}
+@media (prefers-reduced-motion:reduce){.p *,.p *:before,.p *:after{animation:none!important;transition:none!important}}
+</style>
+</helmet>
+<div class="p">
+<div class="ann"><div class="w"><span><strong>REA Learning Hub:</strong> Training modules, webinars, and professional development for the refugee education sector.</span><a href="https://refugee-education.org.au/rea-learning-hub/">Visit the Learning Hub →</a></div></div>
+
+<header class="ban">
+<span class="bl b1"></span><span class="bl b2"></span><span class="bl b3"></span>
+<div class="w">
+<div class="util"><a href="https://refugee-education.org.au/about-us">About Us</a><a href="https://refugee-education.org.au/rea-news">News</a><a href="mailto:contactus@refugee-education.org.au">Contact</a><a href="https://refugee-education.org.au/events">Events</a><a href="https://refugee-education.org.au/my-account">Login</a></div>
+<div class="bar">
+<a class="brand" href="https://refugee-education.org.au"><span class="mk" aria-hidden="true">REA</span><span>Refugee Education<br>Australia</span></a>
+<nav class="nav" aria-label="Main menu"><a href="https://refugee-education.org.au/">Home</a><a href="https://refugee-education.org.au/for-students">For Students</a><a href="https://refugee-education.org.au/networks-and-communities-of-practice-cop">Communities of Practice (CoP)</a><a href="https://refugee-education.org.au/resources">Resources</a><a href="https://refugee-education.org.au/leap">LEAP</a><a class="dn2" href="https://refugee-education.org.au/product/support-rea-make-a-donation/">Donate Now</a></nav>
+</div>
+<div class="bt">
+<p class="crumb"><a href="https://refugee-education.org.au/">Home</a> / About Us</p>
+<h1>About Us</h1>
+<p class="s">A national charity working to enhance educational opportunities and outcomes for students with lived experience of forced migration.</p>
+</div>
+</div>
+</header>
+
+<nav class="chips" aria-label="On this page"><a href="#vision">Vision &amp; Purpose</a><a href="#mission">Mission</a><a href="#principles">Principles</a><a href="#board">Board</a><a href="#advisory">Advisory Group</a><a href="#staff">Staff</a></nav>
+
+<main class="w">
+<section class="sec rv" id="vision">
+<p class="eb">Our vision and purpose</p>
+<h2>Where we are heading</h2>
+<div class="two">
+<div class="vis"><h3>Vision</h3><p>An education system that is inclusive and promotes refugee students to thrive and achieve their potential.</p></div>
+<div class="pur"><h3>Purpose</h3><p>The aim of REA is to work with refugee communities, government departments, settlement agencies, and education providers to support people with lived experience of forced migration to access, participate, and succeed in education, from early childhood to higher education.</p><small>Established in 2024. A Public Benevolent Institution and not-for-profit public company limited by guarantee.</small></div>
+</div>
+</section>
+
+<section class="sec rv" id="mission">
+<p class="eb">Our mission</p>
+<h2>What we do</h2>
+<div class="ms">
+<div class="mc">To work with refugees, refugee-led organisations, community and settlement organisations, and education institutions, departments, and organisations to support people with lived experience of forced migration to access, participate, and succeed in education in Australia, from early childhood to higher education.</div>
+<div class="mc">To create a national network of people and organisations to support people with lived experience of forced migration to access, participate, and succeed in education.</div>
+<div class="mc">To foster awareness in the education sector of issues relating to the experiences of people who have experienced forced migration through training, workshops and sharing of educational resources and good practices.</div>
+<div class="mc">To fundraise to provide financial and other forms of assistance for people who are current or prospective students who have lived experience of forced migration.</div>
+<div class="mc">Advocates with and for people with lived experience of forced migration to participate in education in Australia.</div>
+</div>
+</section>
+
+<section class="sec rv" id="principles">
+<p class="eb">Our operating principles</p>
+<h2>How we hold ourselves to account</h2>
+<div class="pn">
+<div class="pi" style="--c:#017A8F"><b>1</b>REA should seek at least 50% lived experience of forced migration on the Board and in governance practices.</div>
+<div class="pi" style="--c:#F66E22"><b>2</b>A key principle underlying our work is to prioritise the lived experience (of refugees, young people, mature age learners, all types of education).</div>
+<div class="pi" style="--c:#FBC02D"><b>3</b>We engage with refugee community groups to amplify the message through their networks.</div>
+</div>
+</section>
+
+<section class="sec rv" id="board">
+<p class="eb">Our people</p>
+<h2>The people behind REA</h2>
+<div class="grp"><h3>Our board <span>Select a card to read more</span></h3>
+<div class="cards">
+<details class="pc"><summary><span class="av" style="--c:#017A8F;--k:#fff">RE</span><span><b>Rana Ebrahimi</b><em>Chair</em></span><span class="pl">+</span></summary><p>National Manager of MYAN, championing voices for refugee and migrant youth rights.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#F66E22;--k:#1d1d1d">MP</span><span><b>Margaret Piper AM</b><em>Deputy Chair</em></span><span class="pl">+</span></summary><p>A consultant who has worked in the refugee sector since 1986.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#FBC02D;--k:#1d1d1d">SC</span><span><b>Steph Cousins</b><em>Director</em></span><span class="pl">+</span></summary><p>A nonprofit leader and founder of Skill Path Australia.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#014F5C;--k:#fff">EC</span><span><b>Elizabeth Collett</b><em>Secretary</em></span><span class="pl">+</span></summary><p>A migration policy expert with more than twenty years of experience.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#017A8F;--k:#fff">JD</span><span><b>James Delaney</b><em>Treasurer</em></span><span class="pl">+</span></summary><p>Over 12 years of experience in financial audit, assurance and advisory services.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#F66E22;--k:#1d1d1d">AM</span><span><b>Andrea Morris</b><em>Fundraising</em></span><span class="pl">+</span></summary><p>A seasoned nonprofit executive in the human services and university sectors.</p></details>
+</div></div>
+</section>
+
+<section class="sec rv" id="advisory" style="padding-top:56px">
+<div class="grp" style="margin-top:0"><h3>Our advisory group</h3>
+<div class="cards">
+<details class="pc"><summary><span class="av" style="--c:#FBC02D;--k:#1d1d1d">JT</span><span><b>John Tran</b><em>New South Wales</em></span><span class="pl">+</span></summary><p>Has supported students in higher education and advocates for refugees and asylum seekers, drawing on his own lived experience.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#014F5C;--k:#fff">LH</span><span><b>Dr Lisa Hartley</b><em>Western Australia</em></span><span class="pl">+</span></summary><p>Academic, researcher, educator and advocate for human rights, equity and inclusion.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#017A8F;--k:#fff">PB</span><span><b>Phoebe Burgess</b><em>North Queensland</em></span><span class="pl">+</span></summary><p>A legally qualified professional and PhD candidate at the University of Queensland.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#F66E22;--k:#1d1d1d">JD</span><span><b>Jal David</b><em>Tasmania</em></span><span class="pl">+</span></summary><p>Manager of Settlement and Youth Services at Migrant Resource Centre Tasmania.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#FBC02D;--k:#1d1d1d">SB</span><span><b>Dr Snjezana Bilic</b><em>South Australia</em></span><span class="pl">+</span></summary><p>A sociologist and Senior Lecturer at the University of South Australia.</p></details>
+</div></div>
+</section>
+
+<section class="sec rv" id="staff" style="padding-top:56px">
+<div class="grp" style="margin-top:0"><h3>Our staff</h3>
+<div class="cards">
+<details class="pc"><summary><span class="av" style="--c:#017A8F;--k:#fff">SB</span><span><b>Sally Baker</b><em>Chief Executive Officer</em></span><span class="pl">+</span></summary><p>Founder and CEO of Refugee Education Australia.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#F66E22;--k:#1d1d1d">JT</span><span><b>John Tran</b><em>Chief Tech Nerd</em></span><span class="pl">+</span></summary><p>Also a member of the advisory group (New South Wales).</p></details>
+<details class="pc"><summary><span class="av" style="--c:#FBC02D;--k:#1d1d1d">JJ</span><span><b>Jasmine Ju Ju</b><em>Social Media and Communications Officer</em></span><span class="pl">+</span></summary><p>Came to Australia through the Refugee Student Settlement Pathway and studies Media and Communications at the University of Sydney.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#014F5C;--k:#fff">AH</span><span><b>Arvin Hay</b><em>Web &amp; Digital Systems Developer</em></span><span class="pl">+</span></summary><p>Develops and improves REA’s digital resources, including the Pathfinder Hub, LEAP, online forms and the learning platform.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#017A8F;--k:#fff">CN</span><span><b>Carla Nayton</b><em>Senior Policy and Program Advisor</em></span><span class="pl">+</span></summary><p>More than a decade working alongside people seeking asylum and refugees in the not-for-profit sector.</p></details>
+<details class="pc"><summary><span class="av" style="--c:#F66E22;--k:#1d1d1d">SA</span><span><b>Shariqua Ahmed</b><em>Research Officer</em></span><span class="pl">+</span></summary><p>Contributes to research projects and turns findings into practical resources, reports and insights.</p></details>
+</div></div>
+</section>
+</main>
+
+<footer class="ft"><div class="w">
+<div class="fg">
+<div><h3>Connect with us</h3><ul><li><a href="https://www.linkedin.com/company/refugee-education-australia/">LinkedIn</a></li><li><a href="https://www.instagram.com/refugeeeducationaustralia/">Instagram</a></li><li><a href="mailto:contactus@refugee-education.org.au">contactus@refugee-education.org.au</a></li><li><a href="https://refugee-education.org.au/complaints">Complaints</a></li><li><a href="https://refugee-education.org.au/wp-content/uploads/2025/10/REA_Privacy_Policy_27_10_2025.pdf">Privacy Policy</a></li></ul><p style="margin:20px 0 0;font-size:14px">ABN: 99 681 498 662</p></div>
+<div><h3>Stay updated on REA’s latest news, events.</h3>
+<form><label>First Name<input type="text" name="first"></label><label>Last Name<input type="text" name="last"></label><label class="f">Email<input type="email" name="email"></label><label class="f">Org Name<input type="text" name="org" placeholder="Organisation Name"></label><button type="button">Subscribe</button></form></div>
+</div>
+<div class="ack"><strong>Acknowledgement of Country</strong><br>Refugee Education Australia recognises that across the country, we all live and work on the unceded lands and waters of First Nations people, and pay our respects to Elders past and present.</div>
+</div></footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3600}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
